@@ -1,0 +1,483 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    background: #ffffff;
+    box-shadow: 0px 4px 40px -20px rgba(0, 0, 0, 0.25);
+}
+
+main {
+    margin: 0 13px;
+}
+
+.filtersContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 12px;
+}
+
+#botoesContainer {
+    display: flex;
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
+.estiloGeralBotoes {
+    border: 1.5px solid rgba(18, 184, 134, 0.05);
+    background: rgba(18, 184, 134, 0.05);
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #12b886;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 10px;
+    height: 52px;
+}
+
+.estiloGeralBotoes--filter {
+    min-width: 177px;
+}
+
+.estiloGeralBotoes--filter:hover {
+    background-color: #12b886;
+    color: #ffffff;
+    transition: ease-in-out 0.2s;
+}
+
+.botoesClickStyle {
+    background-color: #12b886;
+    color: #ffffff;
+}
+
+.containerBuscaPorNome {
+    display: flex;
+    justify-content: space-between;
+}
+
+.campoBuscaPorNome {
+    border: none;
+    padding: 0 10px;
+    background: #f1f3f5;
+    border-radius: 8px;
+    margin-right: 5px;
+    width: 250px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #515252;
+    font-weight: 400;
+}
+
+.estiloGeralBotoes--botaoBuscaPorNome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 10px;
+    background: #12b886;
+    border: 1.5px solid #12b886;
+    border-radius: 8px;
+    width: 59px;
+}
+
+.containerVitrine {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    border-radius: 50px 0;
+}
+
+.produtosECarrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.containerListaProdutos {
+    width: 100%
+}
+
+.containerListaProdutos ul {
+    list-style: none;
+    display: flex;
+    gap: 40px 10px;
+    overflow-x: auto;
+}
+
+
+.containerListaProdutos ul li {
+    border-radius: 8px;
+    transition: ease-in-out 0.1s;
+    min-width: 95%;
+}
+
+.containerListaProdutos ul li:hover {
+    box-shadow: 3px 3px 13px 1px rgb(146 146 146);
+}
+
+.divInformacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerListaProdutos ul li img {
+    width: 100%;
+}
+
+
+.containerListaProdutos ul li h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 10px 0 15px;
+    color: #212529;
+    padding-left: 5px;
+}
+
+.containerListaProdutos ul li p {
+    font-size: 17px;
+    color: #212529;
+    font-weight: 500;
+    margin: 10px 0 15px;
+}
+
+.containerListaProdutos ul li span {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 20px 15px 5px;
+    display: inline-block;
+    color: #868e96;
+}
+
+.containerListaProdutos ul li button {
+    background-color: #12b8860d;
+    border-radius: 8px;
+    border: #12b886 1px solid;
+    color: #12b886;
+    padding: 5px;
+    margin: 10px 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    float: right;
+}
+
+.containerListaProdutos ul li button:hover {
+    background-color: #12b886;
+    border: #12b886 1px solid;
+    color: white;
+}
+
+.containerListaProdutos ul li div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+
+.containerListaProdutos ul li .precos {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.containerListaProdutos ul li .precoAntigo {
+    color: #12b886;
+    text-decoration: line-through;
+    margin-right: 30px;
+    display: none;
+
+}
+
+.containerListaProdutos ul li .ulComponentes {
+    width: 100%;
+    display: none;
+    gap: 10px;
+    padding-left: 5px;
+}
+
+.containerListaProdutos ul li .ulComponentes .listaComponente {
+    width: 100%;
+}
+
+.containerListaProdutos ul li .ulComponentes .listaComponente span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #868e96;
+    margin: 0 auto;
+}
+
+.containerListaProdutos ul li .ulComponentes li:hover {
+    box-shadow: none;
+}
+
+.carrinho {
+    width: 100%;
+}
+
+.carrinho .logo {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    background-color: #12b886;
+    padding: 27px;
+    border-radius: 10px;
+
+}
+
+.carrinho .logo img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.carrinho .logo h3 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #F1F3F5;
+}
+
+#ulCarrinho {
+    min-height: 350px;
+    background: rgb(235, 234, 234);
+    border-radius: 10px;
+    width: 100%;
+}
+
+#ulCarrinho .conteudoCarrinho {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#ulCarrinho img {
+    margin-bottom: 35px;
+}
+
+#ulCarrinho p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #868E96;
+
+}
+
+
+.total {
+    height: 80px;
+    background-color: #12b886;
+    padding: 18px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #F1F3F5;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.total .quantidade {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total .precoTotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrinho ul li::before {
+    display: none
+}
+
+.carrinho ul {
+    background: #F5F5F5;
+    max-height: 329px;
+    overflow-x: hidden;
+
+}
+
+
+
+.carrinho ul li {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px 5px;
+    border: solid #ffffff 1px;
+    overflow: auto;
+}
+
+
+.carrinho ul li .divInformacao {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.carrinho ul li img {
+    width: 150px;
+    height: 130px;
+}
+
+.carrinho ul li h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #212529;
+    margin-left: 14px;
+
+}
+
+.carrinho ul li .categoria {
+    display: none;
+}
+
+.carrinho ul li span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #868e96;
+    margin-left: 14px;
+
+}
+
+.carrinho ul li .precos p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #212529;
+
+}
+
+.carrinho ul li .precos .precoAntigo {
+    display: none;
+}
+
+
+.carrinho ul li .ulComponentes .listaComponente {
+    display: none;
+
+}
+
+.carrinho ul li button {
+    width: 29px;
+    height: 29px;
+    margin-left: 30px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 600;
+    color: transparent;
+
+}
+
+.carrinho ul li button::before {
+    content: "X";
+    font-size: 15px;
+    background-color: #12b886;
+    color: white;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+
+@media screen and (min-width:768px) {
+    main {
+        margin: 0 70px;
+    }
+
+    .estiloGeralBotoes--botaoBuscaPorNome {
+        width: 177px;
+    }
+
+    .filtersContainer {
+        flex-direction: row;
+        align-items: start;
+        padding: 30px 0;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .produtosECarrinho {
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .containerListaProdutos ul {
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        gap: 40px 6px;
+        justify-content: flex-start
+    }
+
+
+    .containerListaProdutos ul li .ulComponentes {
+        display: flex;
+    }
+
+    .containerListaProdutos ul li .precoAntigo {
+        display: block;
+    }
+
+    .carrinho {
+        max-width: 25%;
+    }
+
+    .carrinho .logo {
+        height: 70px;
+    }
+
+    .containerListaProdutos ul li {
+        min-width: calc(95% / 4);
+        width: calc(95% / 4);
+    }
+
+    .oferta::before {
+        content: "Oferta";
+        display: block;
+        width: 50px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-align: center;
+        color: #fff;
+        background-color: #12b886;
+        position: absolute;
+    }
+
+    .carrinho ul li button::before {
+        content: "Remover";
+        color: #12b886;
+        background-color: transparent;
+    }
+}
